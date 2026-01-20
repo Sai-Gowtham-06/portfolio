@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neonCyan: #00f3ff;
+  --color-neonPurple: #bc13fe;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  @apply bg-slate-900 text-white overflow-x-hidden font-sans;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neonCyan/50 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neonCyan;
+}
